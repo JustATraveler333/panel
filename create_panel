@@ -1,0 +1,39 @@
+create_2D_panel(height, width){
+   1. create defualt* object with heigth and width
+      1a. only desplays the lines of the shape, not the plane
+   2. place box around object with object center at (0,0)
+   * "Defualt" refers to the shape the user has selected from a list of shapes in the settings as their defualt. This also includies shapes made by 
+     the user (This process would have also include the user defining rules on how the shape should grow/shrink).
+}
+
+create_3D_panel(height, width, depth){
+   1. create default* object with heigth, width, and depth
+      1a. only desplays the vertices of the object
+   2. place box around object with object center at (0,0,0)
+   * "Defualt" refers to the object the user has selected from a list of 3D Objects in the settings as their defualt. This also includies objects made by 
+     the user (This process would have also include the user defining rules on how the object should grow/shrink).
+}
+
+/* changes the panel displayed from the old style to a new one selected by user */
+change_panel(current_panel, new_panel){
+   current_panel = new_panel;
+}
+
+import java.awt.FlowLayout;
+import javax.swing.JFrame;
+
+public class Panel extends JFrame{
+  Panel(String name_of_panel){
+  this.SetDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  this.setTitle(name_of_panel);
+  this.setLayout(new FlowLayout());
+  this.setSize(350,200);
+  this.setResizable(false);
+  
+  this.add(
+  
+  this.setVisible(true)
+  }
+
+
+}
